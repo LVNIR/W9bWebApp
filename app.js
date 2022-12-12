@@ -1,5 +1,5 @@
 var express = require('express');
-var app = express();
+var app = express.Router();
 
 app.use('/JS', express.static('JS'));
 app.use('/CSS', express.static('CSS'));
@@ -33,11 +33,11 @@ app.post('/process_get', function (req, res) {
     res.end(JSON.stringify(response));
 })
 
-var server = app.listen(8081, function () {
+// var server = app.listen(8081, function () {
 
-    var host = server.address().address
-    var port = server.address().port
+//     var host = server.address().address
+//     var port = server.address().port
 
-    console.log("应用实例，访问地址为 http://%s:%s", host, port)
+//     console.log("应用实例，访问地址为 http://%s:%s", host, port)
 
-})
+// })
