@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" ng-app="Dashboard">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Yee-Art sign up</title>
+
+  <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+  <script type="text/javascript" src="JS/bootstrap.js"></script>
+  <script type="text/javascript" src="JS/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+
+  <script type="text/javascript" src="JS/app.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!--Header-->
+    <div class="row align-items-start">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+
+        <div class="col-2">
+          <img src="file/yee.jpg" class="figure-img img-fluid rounded" width="100" height="100">
+          <span class="fs-2">Yee-</span>
+        </div>
+
+        <div class="col-8" style="text-align: center;">
+          <h3 class="fs-1">sign up</h3>
+          <a href="index.html">
+            <span>back to index</span>
+          </a>
+        </div>
+
+        <div class="col-2">
+          <span class="fs-2">-Art!</span>
+          <img src="file/art.jpg" class="figure-img img-fluid rounded" width="100" height="100">
+
+        </div>
+
+      </header>
+    </div>
+
+    <!--New Asset Box-->
+    <div class="row align-items-start">
+      <div class="col-2"></div>
+
+      <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
+
+        <form style="font-size: 10pt;" id="newAssetForm">
+
+          <div class="mb-3">
+            <label for="username" class="form-label">User Name</label>
+            <input type="text" class="form-control" id="username" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">password</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="repassword" class="form-label">comfirm password</label>
+            <input type="password" class="form-control" id="repassword" required>
+          </div>
+
+          <button type="button" id="signup" class="btn btn-primary">Submit</button> <br /><br />
+        </form>
+      </div>
+
+      <div class="col-2"></div>
+    </div>
+
+    <div class="row align-items-start">
+      <div class="col-2"></div>
+
+      <div class="col-8" style="text-align: left;">
+
+        <div id="test">
+
+          <h4>The password should be more than 6 letters</h4>
+
+        </div>
+      </div>
+
+      <div class="col-2"></div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
