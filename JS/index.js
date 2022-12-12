@@ -21,7 +21,7 @@ var result_from_server;
 
 function sign_out() {
     sessionStorage.clear();
-    window.location.href = ("index.html");
+    window.location.href = ("/");
 }
 
 function getvideo() {

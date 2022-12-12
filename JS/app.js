@@ -127,10 +127,10 @@ function login() {
     success: function (result) {
       sessionStorage.setItem("username", $('#username').val())
       if (result == 'updater') {
-        window.location.href = ("upload_page.html");
+        window.location.href = ("upload_page");
       }
       if (result == 'costomer') {
-        window.location.href = ("index.html");
+        window.location.href = ("/");
       }
       // $('#test').empty();
       // $('#test').html('<div ><span>' + result + 'Domo,' + sessionStorage.getItem("username") + '= SAN, Ninja Slayer desu </span>' + '<img src="file/ninja-slayer-ninja.gif" class="figure-img img-fluid rounded" width="100" height="100">' + '</div>');
